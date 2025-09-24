@@ -1,274 +1,429 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julia & José - Nosso Casamento</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Lucas & Lorrana</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Biblioteca de animações AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+
+  <!-- MENU FIXO -->
   <header>
-    <h1>Julia & José</h1>
-    <p>Nosso Casamento - 12 de Outubro de 2025</p>
+    <nav>
+      <div class="logo">Lucas & Lorrana</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul id="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#local">Local</a></li>
+        <li><a href="#presentes">Presentes</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="presentes.html">Presentes</a>
-    <a href="local.html">Local</a>
-  </nav>
+  <!-- CAPA -->
+  <section class="convite" id="home">
+    <img src="img/flores-topo.png" alt="Flores topo" class="flores flores-topo" data-aos="fade-down">
 
-  <section class="hero">
-    <img src="img/casal.jpg" alt="Foto do casal">
-    <p>Estamos muito felizes em compartilhar este momento especial com você!</p>
+    <h1 class="iniciais" data-aos="fade-down">L L</h1>
+    <h2 class="nomes" data-aos="fade-up">Lucas e Lorrana</h2>
+    <p class="texto" data-aos="fade-up">Convidam para seu casamento<br>que será realizado no dia</p>
+
+    <div class="detalhes" data-aos="zoom-in">
+      <span class="destaque">19 de outubro</span>
+      <span class="separador">|</span>
+      <span class="destaque">13 horas</span>
+    </div>
+
+    <p class="endereco" data-aos="fade-up">
+      Rua 70, Lote 48, Quadra 342,<br>
+      Jardim Atlântico Leste, Itaipuaçu.
+    </p>
+
+    <!-- CONTADOR -->
+    <div class="contador" id="contador" data-aos="zoom-in">
+      <div><span id="dias">0</span><br>Dias</div>
+      <div><span id="horas">0</span><br>Horas</div>
+      <div><span id="minutos">0</span><br>Min</div>
+      <div><span id="segundos">0</span><br>Seg</div>
+    </div>
+
+    <img src="img/flores-rodape.png" alt="Flores rodapé" class="flores flores-rodape" data-aos="fade-up">
   </section>
 
-  <footer>
-    <p>© 2025 Julia & José</p>
-  </footer>
-</body>
-</html>
+  <!-- NOSSA HISTÓRIA -->
+  <section class="historia" id="historia" data-aos="fade-right">
+    <h2 data-aos="zoom-in">Nossa História</h2>
+    <p data-aos="fade-up">
+      Lucas e Lorrana se conheceram de forma inesperada, mas desde o primeiro dia 
+      descobriram que foram feitos um para o outro. Hoje, compartilham sonhos, 
+      risadas e conquistas, e querem dividir esse momento especial com vocês.
+    </p>
+  </section>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Presentes</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <h1>Lista de Presentes</h1>
-  </header>
+  <!-- LOCAL -->
+  <section class="local" id="local" data-aos="fade-left">
+    <h2 data-aos="zoom-in">Local & Data</h2>
+    <p>19 de outubro, às 13h</p>
+    <p>Rua 70, Lote 48, Quadra 342, Jardim Atlântico Leste, Itaipuaçu</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18..." 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" data-aos="fade-up">
+    </iframe>
+  </section>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="presentes.html">Presentes</a>
-    <a href="local.html">Local</a>
-  </nav>
-
-  <section class="gifts">
-    <div class="gift">
-      <img src="img/presente1.jpg" alt="Presente 1">
-      <p><a href="#">Comprar Presente 1</a></p>
-    </div>
-    <div class="gift">
-      <img src="img/presente2.jpg" alt="Presente 2">
-      <p><a href="#">Comprar Presente 2</a></p>
-    </div>
-    <div class="gift">
-      <img src="img/presente3.jpg" alt="Presente 3">
-      <p><a href="#">Comprar Presente 3</a></p>
+  <!-- LISTA DE PRESENTES -->
+  <section class="presentes" id="presentes" data-aos="fade-up">
+    <h2 data-aos="zoom-in">Lista de Presentes</h2>
+    <p data-aos="fade-up">Escolha um presente e ajude a construir nossa nova vida juntos 💕</p>
+    <div class="links-presentes" data-aos="fade-up">
+      <a href="#" target="_blank">Lista na Americanas</a>
+      <a href="#" target="_blank">Lista na Amazon</a>
+      <a href="#" target="_blank">Cota em dinheiro</a>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Julia & José</p>
-  </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Local do Casamento</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <h1>Local do Casamento</h1>
-  </header>
-
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="presentes.html">Presentes</a>
-    <a href="local.html">Local</a>
-  </nav>
-
-  <section class="map">
-    <p>Nosso casamento será no Salão de Eventos Encanto, Rua das Flores, 123 - Cidade.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- RSVP -->
+  <section class="rsvp" id="rsvp" data-aos="fade-up">
+    <h2 data-aos="zoom-in">Confirme sua Presença</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="number" placeholder="Quantidade de pessoas" required>
+      <button type="submit">Confirmar</button>
+    </form>
   </section>
 
-  <footer>
-    <p>© 2025 Julia & José</p>
+  <!-- RODAPÉ -->
+  <footer data-aos="fade-up">
+    <p class="iniciais-rodape">L & L</p>
+    <p class="frase">Com amor, esperamos você nesse dia especial 💕</p>
+    <p class="copy">&copy; 2025 Lucas & Lorrana</p>
   </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Menu responsivo
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('ativo');
+    });
+
+    // Contador regressivo com animação
+    function atualizarContador() {
+      const destino = new Date("Oct 19, 2025 13:00:00").getTime();
+      const agora = new Date().getTime();
+      const distancia = destino - agora;
+
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+      atualizarElemento("dias", dias);
+      atualizarElemento("horas", horas);
+      atualizarElemento("minutos", minutos);
+      atualizarElemento("segundos", segundos);
+    }
+
+    function atualizarElemento(id, novoValor) {
+      const el = document.getElementById(id);
+      if (el.innerText != novoValor) {
+        el.innerText = novoValor;
+        el.parentElement.style.transform = "scale(1.2)";
+        setTimeout(() => {
+          el.parentElement.style.transform = "scale(1)";
+        }, 200);
+      }
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+
+    // Inicializar AOS
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+
 </body>
 </html>
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #F5F2ED;
+  color: #6B4226;
+  text-align: center;
+}
 
-/* Reset básico */
-* {
+section {
+  padding: 100px 20px 60px;
+}
+
+/* MENU FIXO */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(245, 242, 237, 0.95);
+  border-bottom: 2px solid #C46828;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 22px;
+  color: #6B4226;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  display: flex;
+  gap: 30px;
 }
 
-/* Corpo e fontes */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff7f0;
-  color: #333;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-/* Cabeçalho */
-header {
-  background-color: #f8d7da;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5em;
-  color: #b71c1c;
-  margin-bottom: 5px;
-}
-
-header p {
-  font-size: 1.2em;
-  color: #7f1d1d;
-}
-
-/* Navegação */
-nav {
-  margin: 20px 0;
-  text-align: center;
-}
-
-nav a {
+nav ul li a {
   text-decoration: none;
-  margin: 0 15px;
-  color: #b71c1c;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6B4226;
+  transition: 0.3s;
 }
 
-nav a:hover {
-  color: #ff6f61;
+nav ul li a:hover {
+  color: #C46828;
 }
 
-/* Hero */
-.hero {
-  padding: 20px;
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #6B4226;
 }
 
-.hero img {
-  width: 90%;
-  max-width: 500px;
-  border-radius: 15px;
+/* CAPA */
+.convite {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iniciais {
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  margin: 20px 0 10px;
+  color: #6B4226;
+}
+
+.nomes {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.texto {
   margin: 20px 0;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
+  font-size: 18px;
 }
 
-.hero p {
-  font-size: 1.2em;
-  margin-top: 15px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards 0.3s;
+.detalhes {
+  margin: 15px 0;
+  font-size: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Seção de presentes */
-section.gifts {
+.destaque {
+  font-weight: 700;
+  color: #C46828;
+}
+
+.endereco {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.flores {
+  position: absolute;
+  max-width: 200px;
+  pointer-events: none;
+}
+
+.flores-topo {
+  top: 0;
+  left: 0;
+}
+
+.flores-rodape {
+  bottom: 0;
+  right: 0;
+}
+
+/* CONTADOR */
+.contador {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin: 40px 20px;
-}
-
-.gift {
-  background-color: #fff0f0;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-}
-
-.gift:nth-child(1){animation-delay:0.2s;}
-.gift:nth-child(2){animation-delay:0.4s;}
-.gift:nth-child(3){animation-delay:0.6s;}
-
-.gift:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
-}
-
-.gift img {
-  width: 200px;
-  border-radius: 10px;
-}
-
-.gift a {
-  display: block;
-  margin-top: 10px;
-  color: #b71c1c;
+  gap: 20px;
+  font-size: 18px;
+  color: #6B4226;
   font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s;
 }
 
-.gift a:hover {
-  color: #ff6f61;
-}
-
-/* Seção do mapa */
-section.map {
-  margin: 40px 20px;
-}
-
-section.map p {
-  margin-bottom: 20px;
-  font-size: 1.1em;
-}
-
-section.map iframe {
-  width: 100%;
-  max-width: 600px;
-  height: 400px;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-}
-
-/* Rodapé */
-footer {
-  background-color: #f8d7da;
+.contador div {
+  background: #fff;
+  border: 2px solid #C46828;
   padding: 15px;
-  margin-top: 30px;
+  border-radius: 10px;
+  min-width: 70px;
+  transition: transform 0.3s ease;
+}
+
+.contador div span {
+  display: block;
+  font-size: 26px;
+  color: #C46828;
+  transition: all 0.3s ease;
+}
+
+/* HISTÓRIA */
+.historia {
+  background: #fff;
+  border-top: 3px solid #C46828;
+  border-bottom: 3px solid #C46828;
+}
+.historia p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* LOCAL */
+.local iframe {
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+/* PRESENTES */
+.presentes .links-presentes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.presentes a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #6B4226;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.presentes a:hover {
+  background: #C46828;
+}
+
+/* RSVP */
+.rsvp form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.rsvp input, .rsvp button {
+  padding: 12px;
+  border: 1px solid #6B4226;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.rsvp button {
+  background: #C46828;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.rsvp button:hover {
+  background: #6B4226;
+  color: #fff;
+}
+
+/* RODAPÉ */
+footer {
+  background: #6B4226;
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
+  margin-top: 40px;
 }
 
-/* Animações */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+footer .iniciais-rodape {
+  font-family: 'Great Vibes', cursive;
+  font-size: 36px;
+  margin: 0;
 }
 
-/* Responsivo */
-@media (max-width: 768px){
-  .hero img {
-    width: 100%;
-  }
+footer .frase {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #F5F2ED;
+}
 
-  .gift img {
-    width: 100%;
-  }
+footer .copy {
+  font-size: 12px;
+  margin-top: 15px;
+  opacity: 0.8;
+}
 
-  section.gifts {
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #F5F2ED;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
+    width: 200px;
+    padding: 20px;
+    border-left: 2px solid #C46828;
+    border-bottom: 2px solid #C46828;
+    display: none;
+  }
+
+  nav ul.ativo {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 }
